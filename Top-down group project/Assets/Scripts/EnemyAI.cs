@@ -65,7 +65,7 @@ public class EnemyAI : MonoBehaviour
         Vector3 displacement = transform.position - startPosition;
         if(displacement.magnitude >= paceDistance)
         {
-            paceDirection = displacement;
+            paceDirection = -displacement;
         }
         paceDirection.Normalize();
         //transform.up = paceDirection;

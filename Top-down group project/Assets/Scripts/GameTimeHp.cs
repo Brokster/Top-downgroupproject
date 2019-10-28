@@ -22,14 +22,14 @@ public class GameTimeHp : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            levelTime--;
+            levelTime-=3;
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            levelTime--;
+            levelTime-=5;
         }
     }
 }
