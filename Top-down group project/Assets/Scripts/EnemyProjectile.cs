@@ -12,6 +12,8 @@ public class EnemyProjectile : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         Vector2 ProjectileDirection = new Vector2(player.position.x - transform.position.x,
                 player.position.y - transform.position.y);
+        ProjectileDirection.Normalize();
+        transform.right = ProjectileDirection;
     }
 
     // Update is called once per frame

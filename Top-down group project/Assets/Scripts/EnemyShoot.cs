@@ -22,21 +22,19 @@ public class EnemyShoot : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer > shootDelay)
+        
+           // GameObject Bullet = Instantiate(prefab, transform.position, Quaternion.identity);
+            //Instantiate(prefab, transform.position, Quaternion.identity);
+        Vector2 shootDir = new Vector2(player.position.x - transform.position.x,
+            player.position.y - transform.position.y);
+        if (timer > shootDelay && shootDir.magnitude < shootTriggerDistance)
         {
             timer = 0;
-            GameObject Bullet = Instantiate(prefab, transform.position, Quaternion.identity);
-            //Instantiate(prefab, transform.position, Quaternion.identity);
-            Vector2 shootDir = new Vector2(player.position.x - transform.position.x,
-                player.position.y - transform.position.y);
-            if (timer > shootDelay && shootDir.magnitude < shootTriggerDistance)
-            {
-                timer = 0;
-                GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
-                shootDir.Normalize();
-                Bullet.GetComponent<Rigidbody2D>().velocity = shootDir * bulletSpeed;
-                Destroy(Bullet, bulletlifetime);
-            }
+            GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
+            shootDir.Normalize();
+            bullet.GetComponent<Rigidbody2D>().velocity = shootDir * bulletSpeed;
+            Destroy(bullet, bulletlifetime);
         }
+        
     }
 }
