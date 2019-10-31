@@ -5,14 +5,18 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class GameTimeHp : MonoBehaviour
 {
-    public float levelTime = 120.0f;
-    float timer = 0;
+    public float timer = 0;
     public Text TimeText;
+    private void Start()
+    {
+        timer = 120.0f;
+    }
     public void Update()
     {
         TimeText.text = "Time: " + timer + "/100";
-        timer += Time.deltaTime;
-        if (timer > levelTime)
+        TimeText.text = "Time left: " + Mathf.RoundToInt(timer);
+        timer -= Time.deltaTime;
+        if (timer < 0)
         {
             SceneManager.LoadScene(
                 SceneManager.GetActiveScene().name);
@@ -22,14 +26,14 @@ public class GameTimeHp : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            levelTime-=3;
+            timer-=3;
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            levelTime-=5;
+            timer-=5;
         }
     }
 }
