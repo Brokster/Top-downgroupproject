@@ -11,7 +11,8 @@ public class EnemyHp : MonoBehaviour
         if (collision.gameObject.tag == "Bullet")
         {
             health--;
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(transform.position.x - collision.gameObject.transform.position.x, transform.position.y - collision.gameObject.transform.position.y));
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(transform.position.x - collision.gameObject.transform.position.x, 
+                transform.position.y - collision.gameObject.transform.position.y));
             if (health < 1)
             {
                 Destroy(gameObject);

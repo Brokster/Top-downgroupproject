@@ -24,14 +24,16 @@ public class GameTimeHp : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "CorridorOne" 
+            || collision.gameObject.tag == "CorridorTwo" || collision.gameObject.tag == "CorridorThree")
         {
             timer-=3;
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "CorridorOne" 
+            || collision.gameObject.tag == "CorridorTwo" || collision.gameObject.tag == "CorridorThree")
         {
             timer-=5;
         }

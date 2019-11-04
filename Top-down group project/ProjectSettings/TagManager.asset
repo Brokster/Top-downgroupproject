@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - CorridorOne
+  - CorridorTwo
+  - CorridorThree
   layers:
   - Default
   - TransparentFX
