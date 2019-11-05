@@ -5,18 +5,20 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class GameTimeHp : MonoBehaviour
 {
-    public float timer = 0;
+    public float TimeHp = 0;
     public Text TimeText;
+    public float timer;
+    float elapsed = 0f;
     private void Start()
     {
-        timer = 120.0f;
+        TimeHp = 120.0f;
     }
     public void Update()
     {
-        TimeText.text = "Time: " + timer + "/100";
-        TimeText.text = "Time left: " + Mathf.RoundToInt(timer);
-        timer -= Time.deltaTime;
-        if (timer < 0)
+        TimeText.text = "Time: " + TimeHp + "/100";
+        TimeText.text = "Time left: " + Mathf.RoundToInt(TimeHp);
+        TimeHp -= Time.deltaTime;
+        if (TimeHp < 0)
         {
             SceneManager.LoadScene(
                 SceneManager.GetActiveScene().name);
@@ -27,7 +29,7 @@ public class GameTimeHp : MonoBehaviour
         if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "CorridorOne" 
             || collision.gameObject.tag == "CorridorTwo" || collision.gameObject.tag == "CorridorThree")
         {
-            timer-=3;
+            TimeHp-=3;
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
@@ -35,7 +37,26 @@ public class GameTimeHp : MonoBehaviour
         if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "CorridorOne" 
             || collision.gameObject.tag == "CorridorTwo" || collision.gameObject.tag == "CorridorThree")
         {
-            timer-=5;
+            TimeHp-=5;
+        }
+    }
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        elapsed += Time.deltaTime;
+        if (elapsed >= 1f)
+        {
+            elapsed = elapsed % 1f;
+            OutputTime();
+            void OutputTime()
+            {
+                Debug.Log(Time.time);
+            }
+
+            if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "CorridorOne"
+                || collision.gameObject.tag == "CorridorTwo" || collision.gameObject.tag == "CorridorThree")
+            {
+                TimeHp -= 5;
+            }
         }
     }
 }
