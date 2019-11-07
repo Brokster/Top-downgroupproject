@@ -8,6 +8,7 @@ TagManager:
   - CorridorOne
   - CorridorTwo
   - CorridorThree
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Enemy
   - EnemyBullets
   - Player
-  - 
+  - PlayerBullet
   - 
   - 
   - 

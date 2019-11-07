@@ -12,6 +12,9 @@ public class EnemyAI : MonoBehaviour
     public Vector2 paceDirection;
     Vector3 startPosition;
     bool home = true;
+    public bool knockBack;
+    public float knockBackTimer = 2;
+    float timer = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,20 +22,36 @@ public class EnemyAI : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        Vector2 chaseDirection = new Vector2(player.position.x - transform.position.x,
-                player.position.y - transform.position.y);
-        if(chaseDirection.magnitude < chaseTriggerDistance)
+        if (!knockBack)
         {
-            Chase();
-        }else if (!home)
-        {
-            Gohome();
+
+            GetComponent<Animator>().enabled = true;
+            Vector2 chaseDirection = new Vector2(player.position.x - transform.position.x,
+                    player.position.y - transform.position.y);
+            if (chaseDirection.magnitude < chaseTriggerDistance)
+            {
+                Chase();
+            }
+            else if (!home)
+            {
+                Gohome();
+            }
+            else
+            {
+                Pace();
+            }
         }
         else
         {
-            Pace();
+            GetComponent<Animator>().enabled = false;
+            timer += Time.deltaTime;
+            if(timer > knockBackTimer)
+            {
+                knockBack = false;
+                timer = 0;
+            }
         }
     }
     void Chase()
