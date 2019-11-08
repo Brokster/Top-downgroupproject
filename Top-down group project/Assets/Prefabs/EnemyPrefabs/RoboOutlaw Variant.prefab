@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!95 &7956135304378281929
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8494030481087988047}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d9f02d41ec291fc4cb46e0ee035c9035, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &6433219414069795873
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3217744146820357486, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_Name
+      value: RoboOutlaw
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0708171
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.8926334
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357473, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8981913511835670643, guid: f3ef96c1b25873545b04308414d2d570,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 3217744146820357477, guid: 9fbc00625bff04c4d995a2438352128b, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 9fbc00625bff04c4d995a2438352128b, type: 3}
+--- !u!1 &8494030481087988047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3217744146820357486, guid: 9fbc00625bff04c4d995a2438352128b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6433219414069795873}
+  m_PrefabAsset: {fileID: 0}
