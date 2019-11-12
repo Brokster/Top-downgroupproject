@@ -39,6 +39,11 @@ public class GameTimeHp : MonoBehaviour
         {
             TimeHp-=5;
         }
+        else
+        {
+            if (collision.gameObject.tag == "Clock")
+                TimeHp +=5;
+        }
     }
     void OnCollisionStay2D(Collision2D collision)
     {

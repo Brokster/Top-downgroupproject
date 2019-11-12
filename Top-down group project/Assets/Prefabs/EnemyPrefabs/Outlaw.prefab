@@ -177,6 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   knockbackForce: 5
+  prefab: {fileID: 8440330805617859244, guid: e5d0aa8ab32de4843baaa940220300ed, type: 3}
 --- !u!114 &3217744146820357478
 MonoBehaviour:
   m_ObjectHideFlags: 0

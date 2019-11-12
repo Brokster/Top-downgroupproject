@@ -6,6 +6,7 @@ public class EnemyHp : MonoBehaviour
 {
     public int health = 3;
     public float knockbackForce = 5.0f;
+    public GameObject prefab;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,6 +18,7 @@ public class EnemyHp : MonoBehaviour
                 transform.position.y - collision.gameObject.transform.position.y) * knockbackForce;
             if (health < 1)
             {
+                GameObject Clock = Instantiate(prefab, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }
         }

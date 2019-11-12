@@ -9,6 +9,7 @@ TagManager:
   - CorridorTwo
   - CorridorThree
   - PlayerBullet
+  - Clock
   layers:
   - Default
   - TransparentFX

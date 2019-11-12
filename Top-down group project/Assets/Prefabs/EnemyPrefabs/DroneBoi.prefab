@@ -208,3 +208,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   knockbackForce: 3
+  prefab: {fileID: 8440330805617859244, guid: e5d0aa8ab32de4843baaa940220300ed, type: 3}
