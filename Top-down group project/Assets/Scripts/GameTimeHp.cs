@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class GameTimeHp : MonoBehaviour
 {
-    public float TimeHp = 0;
+    public float TimeHp = 180.0f;
     public Text TimeText;
     public float timer;
     float elapsed = 0f;
     private void Start()
     {
-        TimeHp = 180.0f;
+
     }
     public void Update()
     {
