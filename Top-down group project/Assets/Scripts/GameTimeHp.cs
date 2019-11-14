@@ -11,7 +11,7 @@ public class GameTimeHp : MonoBehaviour
     float elapsed = 0f;
     private void Start()
     {
-        TimeHp = 120.0f;
+        TimeHp = 180.0f;
     }
     public void Update()
     {
@@ -31,6 +31,14 @@ public class GameTimeHp : MonoBehaviour
         {
             TimeHp-=3;
         }
+        else if (collision.gameObject.tag == "Clock")
+        {
+                TimeHp += 5;
+        }
+        else if (collision.gameObject.tag == "ThickClock")
+        {
+                TimeHp += 60;
+        }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -38,11 +46,6 @@ public class GameTimeHp : MonoBehaviour
             || collision.gameObject.tag == "CorridorTwo" || collision.gameObject.tag == "CorridorThree")
         {
             TimeHp-=5;
-        }
-        else
-        {
-            if (collision.gameObject.tag == "Clock")
-                TimeHp +=5;
         }
     }
     void OnCollisionStay2D(Collision2D collision)

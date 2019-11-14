@@ -139,7 +139,7 @@ MonoBehaviour:
   chaseTriggerDistance: 10
   paceDirection: {x: 1, y: 0}
   knockBack: 0
-  knockBackTimer: 0.1
+  knockBackTimer: 0.05
 --- !u!95 &625805988204049172
 Animator:
   serializedVersion: 3
@@ -188,5 +188,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  knockbackForce: 5
+  knockbackForce: 3
   prefab: {fileID: 8440330805617859244, guid: e5d0aa8ab32de4843baaa940220300ed, type: 3}
