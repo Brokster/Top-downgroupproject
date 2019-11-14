@@ -162,7 +162,7 @@ MonoBehaviour:
   chaseTriggerDistance: 10
   paceDirection: {x: 0, y: 0}
   knockBack: 0
-  knockBackTimer: 2
+  knockBackTimer: 0.05
 --- !u!114 &3217744146820357475
 MonoBehaviour:
   m_ObjectHideFlags: 0

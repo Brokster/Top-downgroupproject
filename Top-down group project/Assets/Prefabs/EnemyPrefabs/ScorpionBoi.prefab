@@ -128,7 +128,7 @@ MonoBehaviour:
   chaseTriggerDistance: 5
   paceDirection: {x: 0, y: 0}
   knockBack: 0
-  knockBackTimer: 2
+  knockBackTimer: 0.05
 --- !u!114 &5394938588363793850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 761e2f1753d165d47a6e107e548a5a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 2
   knockbackForce: 5
   prefab: {fileID: 8440330805617859244, guid: e5d0aa8ab32de4843baaa940220300ed, type: 3}
 --- !u!95 &41147943253617462

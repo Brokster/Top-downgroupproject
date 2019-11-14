@@ -29,7 +29,7 @@ PrefabInstance:
     - target: {fileID: 3217744146820357486, guid: 9fbc00625bff04c4d995a2438352128b,
         type: 3}
       propertyPath: m_Name
-      value: RoboOutlaw
+      value: RoboOutlaw Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
         type: 3}
@@ -86,12 +86,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357472, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3217744146820357473, guid: 9fbc00625bff04c4d995a2438352128b,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -8981913511835670643, guid: f3ef96c1b25873545b04308414d2d570,
         type: 3}
+    - target: {fileID: 3217744146820357474, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: paceSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357474, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: paceDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357474, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: knockBackTimer
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357474, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: chaseTriggerDistance
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3217744146820357477, guid: 9fbc00625bff04c4d995a2438352128b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9fbc00625bff04c4d995a2438352128b, type: 3}
