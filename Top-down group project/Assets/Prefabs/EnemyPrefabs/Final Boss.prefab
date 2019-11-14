@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7927131367878251377}
   - component: {fileID: 7190106150199890236}
   - component: {fileID: 2045077631448903011}
+  - component: {fileID: 4428898886931002516}
+  - component: {fileID: 8336908083019967428}
   m_Layer: 0
   m_Name: Final Boss
   m_TagString: Untagged
@@ -101,3 +103,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4428898886931002516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4688975373305066898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 761e2f1753d165d47a6e107e548a5a18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  knockbackForce: 5
+  prefab: {fileID: 0}
+--- !u!114 &8336908083019967428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4688975373305066898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756d1f58c965dae419eefdd5904cce6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  bulletSpeed: 10
+  bulletlifetime: 1
+  shootDelay: 1
+  shootTriggerDistance: 10
+  player: {fileID: 0}
