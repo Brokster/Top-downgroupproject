@@ -1160,29 +1160,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1592172340719171363, guid: 6d8f7cbb416f9464f92bdb72906958ec,
+      objectReference: {fileID: 4656818316919244867, guid: 35505cf05581e334ca67dfd7c1d0eec4,
         type: 3}
     - target: {fileID: 7825843437759553596, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
         type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a52d33fdda3a4d840927764ec1de02a4, type: 2}
-    - target: {fileID: 7825843437759553595, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
-        type: 3}
-      propertyPath: shootDelay
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7825843437759553595, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
-        type: 3}
-      propertyPath: prefab
-      value: 
-      objectReference: {fileID: 2731891506487575085, guid: 6ec474881122bdd40b31def14bad8d12,
-        type: 3}
-    - target: {fileID: 7825843437759553595, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
-        type: 3}
-      propertyPath: bulletlifetime
-      value: 0.7
-      objectReference: {fileID: 0}
     - target: {fileID: 7825843437759553599, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
         type: 3}
       propertyPath: m_Offset.x
@@ -1202,6 +1186,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 0.5760017
+      objectReference: {fileID: 0}
+    - target: {fileID: 7825843437759553595, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
+        type: 3}
+      propertyPath: shootDelay
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7825843437759553595, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
+        type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 2731891506487575085, guid: 6ec474881122bdd40b31def14bad8d12,
+        type: 3}
+    - target: {fileID: 7825843437759553595, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
+        type: 3}
+      propertyPath: bulletlifetime
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53eff81f18b28d44a83c979e1bf5fbb4, type: 3}
