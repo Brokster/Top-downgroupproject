@@ -7,9 +7,9 @@ public class ChangeLevel : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "LevelTwo")
+        if (collision.gameObject.tag == "PortalTwo")
         {
-            SceneManager.LoadScene("LevelTwo");
+            SceneManager.LoadScene("LevelThree");
         }
     }
 
