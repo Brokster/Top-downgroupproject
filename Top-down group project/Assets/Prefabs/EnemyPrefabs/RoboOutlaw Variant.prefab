@@ -96,12 +96,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.4
       objectReference: {fileID: 0}
-    - target: {fileID: 3217744146820357473, guid: 9fbc00625bff04c4d995a2438352128b,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -8981913511835670643, guid: f3ef96c1b25873545b04308414d2d570,
-        type: 3}
     - target: {fileID: 3217744146820357474, guid: 9fbc00625bff04c4d995a2438352128b,
         type: 3}
       propertyPath: paceSpeed
@@ -120,6 +114,27 @@ PrefabInstance:
     - target: {fileID: 3217744146820357474, guid: 9fbc00625bff04c4d995a2438352128b,
         type: 3}
       propertyPath: chaseTriggerDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357474, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: chaseSpeed
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357473, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8981913511835670643, guid: f3ef96c1b25873545b04308414d2d570,
+        type: 3}
+    - target: {fileID: 3217744146820357475, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: knockbackForce
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217744146820357475, guid: 9fbc00625bff04c4d995a2438352128b,
+        type: 3}
+      propertyPath: health
       value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:

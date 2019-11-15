@@ -155,6 +155,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8440330805617859244, guid: e5d0aa8ab32de4843baaa940220300ed,
         type: 3}
+    - target: {fileID: 5394938588363793850, guid: a4ee6f228f9f51444994297307cd7d28,
+        type: 3}
+      propertyPath: knockbackForce
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5394938588363793850, guid: a4ee6f228f9f51444994297307cd7d28,
+        type: 3}
+      propertyPath: health
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3380776846822040909, guid: a4ee6f228f9f51444994297307cd7d28,
         type: 3}
       propertyPath: m_Sprite
