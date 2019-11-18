@@ -1107,12 +1107,12 @@ PrefabInstance:
     - target: {fileID: 7825843437759553584, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 7825843437759553584, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -99.59
       objectReference: {fileID: 0}
     - target: {fileID: 7825843437759553584, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
         type: 3}
@@ -1174,6 +1174,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7825843437759553598, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
+        type: 3}
+      propertyPath: TimeText
+      value: 
+      objectReference: {fileID: 1788308970}
+    - target: {fileID: 7825843437759553598, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
+        type: 3}
+      propertyPath: TimeHp
+      value: 240
+      objectReference: {fileID: 0}
     - target: {fileID: 7825843437759553585, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
         type: 3}
       propertyPath: m_Sprite
@@ -1220,16 +1230,6 @@ PrefabInstance:
         type: 3}
       propertyPath: bulletlifetime
       value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7825843437759553598, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
-        type: 3}
-      propertyPath: TimeText
-      value: 
-      objectReference: {fileID: 1788308970}
-    - target: {fileID: 7825843437759553598, guid: 53eff81f18b28d44a83c979e1bf5fbb4,
-        type: 3}
-      propertyPath: TimeHp
-      value: 240
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53eff81f18b28d44a83c979e1bf5fbb4, type: 3}
